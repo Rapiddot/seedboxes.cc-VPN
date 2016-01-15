@@ -1,0 +1,25 @@
+===================================
+	SEEDBOXES.CC VPN CHANGE LOG
+===================================
+
+====================
+v1.2.1 (15-01-2016)
+====================
+
+- Remove TAP/TUN driver re-loading and vpnclient service restart before each connection (MacOSX)
+- Workaround for IPV6 and Windows 7 which didn't allow connection to be established
+
+====================
+v1.2.0 (04-01-2016)
+====================
+
+- Replace OpenVPN with SoftEtherVPN protocol
+- Fix application hang when API calls were taking too long
+- Remove Settings > Log tab
+- Improve UI smoothness
+- Update bundled JRE to 1.8.0_65
+- Add JRE version to Info
+- Fix bug with IPV6
+- Sign application and mpkg (MacOSX)
+- Fix bug with country and servers combobox height calculation (Windows)
+- Remove tap-windows.exe installer since we no longer need it (Windowss)
