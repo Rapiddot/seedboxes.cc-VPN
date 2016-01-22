@@ -3,6 +3,14 @@
 ===================================
 
 ====================
+v1.2.2 (22-01-2016)
+====================
+
+- Update bundled JRE to 1.8.0_72
+- Update library dependencies
+- Fix bug with country selection combo box which caused application to crash in some cases (Windows)
+
+====================
 v1.2.1 (15-01-2016)
 ====================
 
