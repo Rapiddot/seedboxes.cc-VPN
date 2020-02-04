@@ -29,10 +29,10 @@ for folder in $PLEX_SUBFOLDERS
 do
   # Check if user has implemented Plex to an encrypted Google drive location and offload content
   if grep -q plex-crypt $RCLONE_CONFIG; then
-  rclone move /home/user/files/Plex/$folder/ plex-crypt:Plex/$folder "${ARGS[@]}"
+  rclone move "/home/user/files/Plex/$folder/" "plex-crypt:Plex/$folder" "${ARGS[@]}"
   else
   # Offload to unencrypted Plex inside Google drive
-  rclone move /home/user/files/Plex/$folder/ plex-gdrive:Plex/$folder "${ARGS[@]}"
+  rclone move "/home/user/files/Plex/$folder/" "plex-gdrive:Plex/$folder" "${ARGS[@]}"
   fi
 done
 
